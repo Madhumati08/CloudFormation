@@ -11,7 +11,7 @@ Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-068c0051b15cdb816
+      ImageId: ami-0ecb62995f68bb549
       Tags:
         - Key: Name
           Value: CF-Demo-Instance
