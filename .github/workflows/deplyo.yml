@@ -23,7 +23,7 @@ jobs:
       - name: Deploy CloudFormation Stack
         run: |
           aws cloudformation deploy \
-            --template-file template.yaml \
+            --template-file CloudFormation.yaml \
             --stack-name ec2-demo-stack \
             --parameter-overrides InstanceType=t2.micro \
             --capabilities CAPABILITY_NAMED_IAM
