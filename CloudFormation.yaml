@@ -12,10 +12,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0ecb62995f68bb549
-      Tags:
-        - Key: Name
-          Value: CF-Demo-Instance
-
+    
 Outputs:
   InstanceId:
     Description: EC2 Instance ID
