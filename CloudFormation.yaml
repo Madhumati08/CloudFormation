@@ -13,7 +13,4 @@ Resources:
     Properties:
       ImageId: ami-0ecb62995f68bb549
     
-Outputs:
-  InstanceId:
-    Description: EC2 Instance ID
    
