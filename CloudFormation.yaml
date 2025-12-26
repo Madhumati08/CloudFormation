@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Simple EC2 instance using CloudFormation
+
+Parameters:
+  InstanceType:
+    Type: String
+    Default: t2.micro
+    Description: EC2 instance type
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0abcdef1234567890
+      Tags:
+        - Key: Name
+          Value: CF-Demo-Instance
+
+Outputs:
+  InstanceId:
+    Description: EC2 Instance ID
+   
