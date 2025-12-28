@@ -1,13 +1,12 @@
 name: Deploy EC2 using CloudFormation
-
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  cloudformation-deploy:
+  deploy-prod:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
 
     steps:
       - name: Checkout source code
